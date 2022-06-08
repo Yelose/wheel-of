@@ -1,12 +1,19 @@
 .container {
     perspective: 1100px;
 }
+header{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
 .container {
     width: 210px;
     height: 140px;
     position: relative;
     margin: 0 auto 40px;
-    border: 1px solid #CCC;
     perspective: 1100px;
   }
   #carousel {
