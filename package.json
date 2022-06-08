@@ -1,0 +1,26 @@
+{
+  "name": "wheel-of",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel",
+    "build-prod": "npx parcel build",
+    "buildlight": "npx parcel bulid --no-source-maps --no-optimize --public-url . --no-cache --dist-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marta-asturias/wheel-of.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marta-asturias/wheel-of/issues"
+  },
+  "homepage": "https://github.com/Marta-asturias/wheel-of#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0"
+  }
+}
