@@ -1,3 +1,3 @@
 npm run start
 
-npm -i -D @parcel/transformer-sass
+npm i -D @parcel/transformer-sass
