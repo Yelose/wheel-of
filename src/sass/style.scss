@@ -86,7 +86,7 @@
 }
 
 #carousel {
-    animation: rotateInY 10s infinite linear;
+    animation: rotateInY 2s infinite linear;
 }
 @keyframes rotateInY {
 0%   { transform: translateZ(-288px) rotateY(0deg);   }

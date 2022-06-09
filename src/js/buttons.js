@@ -5,5 +5,5 @@ let carousel = document.getElementById('carousel')
 btnStart.addEventListener('click', startWheel());
 
 function startWheel(){
-
+    document.querySelector('carousel')
 }
