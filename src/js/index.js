@@ -1,4 +1,4 @@
-var participantes = ['hola', 'adios'],
+var participantes = [],
         random = (max, min, inclusive) => inclusive === true ? 
         Math.floor(Math.random() * (max - min + 1) + min) :
         Math.floor(Math.random() * (max - min) + min),
