@@ -1,7 +1,7 @@
 @import "./sacrificed";
 
-.container {
-    perspective: 1100px;
+.carousel-container {
+  width: 100%;
 }
 header{
     display: flex;
@@ -12,17 +12,17 @@ header{
     justify-content: space-evenly;
 }
 .container {
-    width: 210px;
-    height: 140px;
+    width: 6vw;
+    height: 3vw;
     position: relative;
-    margin: 0 auto 40px;
-    perspective: 1100px;
+    margin: 0 auto 1vw;
+    perspective: 90vw;
   }
   #carousel {
     width: 100%;
     height: 100%;
     position: absolute;
-            transform: translateZ( -288px );
+            transform: translateZ(-360px);
             transform-style: preserve-3d;
             transition: transform 1s;
   }
@@ -30,13 +30,12 @@ header{
     display: block;
     position: absolute;
     width: auto;
-    padding: 1vw;
     height: auto;
     left: 10px;
     top: 10px;
     border: none;
-    line-height: 116px;
-    font-size: 25px;
+    line-height: 3vw;
+    font-size: clamp(15px, 3.5vw, 36px);
     font-weight: bold;
     color: white;
     text-align: center;
@@ -54,6 +53,6 @@ header{
     animation: rotateInY 20s infinite linear;
 }
 @keyframes rotateInY {
-0%   { transform: translateZ(-300px) rotateX(3deg) rotateY(0deg);   }
-100% { transform: translateZ(-300px) rotateX(3deg) rotateY(360deg);    }
+0%   { transform: translateZ(-6vw) rotateX(3deg) rotateY(0deg);   }
+100% { transform: translateZ(-6vw) rotateX(3deg) rotateY(360deg);    }
 }
