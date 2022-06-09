@@ -1,3 +1,3 @@
-nmp run start
+npm run start
 
-nmp -i -D @parcel/transformer-sass
+npm i -D @parcel/transformer-sass
