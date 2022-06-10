@@ -28,6 +28,7 @@ function printParticipantsDefault(array) {
     let span = document.createElement("span");
   }
 }
+
 printParticipantsDefault(participants)
 // `{name: ${userValue}}`
 export function addNewUser(ul, list) {
