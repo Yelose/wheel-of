@@ -12,8 +12,8 @@ export function addUser() {
     let inputUser = document.getElementById("inputNewUser");
     if (inputUser.value!= "") {
       addNewUser(ul, inputUser.value);
-      // participants.push(`,{name: ${inputUser.value}}`);
-      // printFiguresInHTML (figureCarouselEl, participants);
+       participants.push(`,{name: ${inputUser.value}}`);
+      printFiguresInHTML (figureCarouselEl, participants);
       inputUser.value = "";
     }
   }
