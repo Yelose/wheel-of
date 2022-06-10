@@ -1,0 +1,21 @@
+ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #29191ae6;
+  }
+  
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  li .content {
+    flex-grow: 1;
+}
+  
