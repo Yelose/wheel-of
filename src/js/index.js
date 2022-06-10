@@ -5,6 +5,7 @@
 //         nameSelected = participantes[random(participantes.length, 0, "false")];
 //         console.log(nameSelected);
 
+import { figureCarouselEl, printFiguresInHTML } from "./figures";
 import { participants } from "./participants";
 
 
@@ -12,3 +13,4 @@ function app() {
     console.log(participants);
 }
 app()
+printFiguresInHTML (figureCarouselEl, participants)

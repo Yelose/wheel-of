@@ -16,32 +16,29 @@
     </header>
     <section class="container">
         
-        <section class="container">
+        <section class="carousel-container">
             <div id="carousel" style="transform: translateZ(-288px) rotateY(-360deg);">
-                <figure>1</figure>
-                <figure>2</figure>
-                <figure>3</figure>
-                <figure>4</figure>
-                <figure>5</figure>
-                <figure>6</figure>
-                <figure>7</figure>
-                <figure>8</figure>
-                <figure>9</figure>
+            
             </div>
         </section>
+    </section>
+    <section>
         <div id="sacrificed">
             <h1>Nombre</h1>
         </div>
+    </section>
+    <section>
         <div class="buttons">
          <img src="./img/start (1).png" class="start btn" id="start btn" alt="">
          <img src="./img/reset.png" class="reset btn" id="reset btn" alt="">
          <img src="./img/user (1).png" class="users btn" id="users btn" alt="">
         </div>
-        <input type="text">
-        <input type="text">
-        <input type="text">
+        <input id="inputNewUser" type="text" placeholder="New User" name="new-user"
+        /><button id="add-newuser">Add User</button>
+        <ul id="participants-list"></ul>
     </section>
 </body>
 <script src="./js/index.js" type="module" defer></script>
+<script src="./js/listparticipants.js" type="module" defer></script>
 
 </html>
