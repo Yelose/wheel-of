@@ -5,7 +5,10 @@
 //         nameSelected = participantes[random(participantes.length, 0, "false")];
 //         console.log(nameSelected);
 
+// import { addUserButton } from "./buttons";
 import { figureCarouselEl, printFiguresInHTML } from "./figures";
+// import { addUser } from "./listparticipants";
+
 import { participants } from "./participants";
 
 //Sugerencia: use el método insertRow() para crear una nueva fila o un nuevo participante(<tr>).
@@ -16,3 +19,4 @@ function app() {
 }
 app()
 printFiguresInHTML (figureCarouselEl, participants)
+console.log("ñalskdjf")
