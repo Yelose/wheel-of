@@ -1,3 +1,4 @@
+
 export let participants = [
     {
         name: "Tania"
@@ -40,11 +41,5 @@ export let participants = [
     },
     {
         name: "Sara"
-    },
-    {
-        name: "Leon"
-    },
-    {
-        name: "Anatolii"
     }
 ]
