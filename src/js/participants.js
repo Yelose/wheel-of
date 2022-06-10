@@ -41,4 +41,10 @@ export let participants = [
     {
         name: "Sara"
     },
+    {
+        name: "Leon"
+    },
+    {
+        name: "Anatolii"
+    }
 ]
