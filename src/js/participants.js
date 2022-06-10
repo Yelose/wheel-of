@@ -16,13 +16,13 @@ export let participants = [
         name: "Viviana"
     },
     {
-        name: "Verónica"
+        name: "Vero"
     },
     {
-        name: "Marybell"
+        name: "Mary Bell"
     },
     {
-        name: "Cristina"
+        name: "Cris"
     },
     {
         name: "Paz"

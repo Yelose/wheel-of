@@ -1,8 +1,11 @@
 import { addUserButton } from "./buttons";
-import { figureCarouselEl, printFiguresInHTML } from "./figures";
-import { addUser } from "./listparticipants";
+import { inputUser } from "./elements";
+import { figureCarouselEl, fontSizeAdjustment, printFiguresInHTML, widthAdjustment } from "./figures";
+import { addUser, inputKeyPress } from "./listparticipants";
 import { participants } from "./participants";
 
 printFiguresInHTML (figureCarouselEl, participants)
+fontSizeAdjustment (figureCarouselEl, participants)
+widthAdjustment (figureCarouselEl, participants)
 addUserButton.addEventListener("click", addUser)
-console.log("ñalskdjf")
+inputUser.addEventListener("keypress", inputKeyPress)
