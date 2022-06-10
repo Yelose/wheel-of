@@ -11,13 +11,9 @@ export function addUser() {
     let inputUser = document.getElementById("inputNewUser");
     if (inputUser.value!= "") {
       addNewUser(ul, inputUser.value);
-<<<<<<< HEAD
-       participants.push(`,{name: ${inputUser.value}}`);
-=======
       let userValue = inputUser.value;
       participants.push({name: `${userValue}`});
       figureCarouselEl.innerHTML = "";
->>>>>>> d31fe9b41b06dc489c96de9724a77925a8e77930
       printFiguresInHTML (figureCarouselEl, participants);
       inputUser.value = "";
     }
