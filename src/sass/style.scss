@@ -54,6 +54,6 @@ header{
     animation: rotateInY 20s infinite linear;
 }
 @keyframes rotateInY {
-0%   { transform: translateZ(-6vw) rotateX(3deg) rotateY(0deg);   }
-100% { transform: translateZ(-6vw) rotateX(3deg) rotateY(360deg);    }
+0%   { transform: translateZ(-3vw) rotateX(3deg) rotateY(0deg);   }
+100% { transform: translateZ(-3vw) rotateX(3deg) rotateY(360deg);    }
 }
