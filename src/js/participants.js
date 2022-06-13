@@ -1,22 +1,22 @@
 
 export let participants = [
     {
-        name: "Tania"
+        name: "Tania",
     },
     {
-        name: "Nerea"
+        name: "Nerea",
     },
     {
-        name: "Marina"
+        name: "Marina",
     },
     {
-        name: "Marta"
+        name: "Marta",
     },
     {
-        name: "Viviana"
+        name: "Viviana",
     },
     {
-        name: "Vero"
+        name: "Vero",
     },
     {
         name: "Mary Bell"
