@@ -10,31 +10,6 @@ export function printParticipantsList(){
 }
 
 export function addUser() {
-<<<<<<< HEAD
-  let ul = document.getElementById("participants-list");
-
-  let confirmUser = window.confirm("¿Agregar participante a la lista?");
-
-  if (confirmUser === true) {
-    let inputUser = document.getElementById("inputNewUser");
-    if (inputUser.value!= "") {
-      addNewUser(ul, inputUser.value);
-      let userValue = inputUser.value;
-      participants.push({name: `${userValue}`});
-      figureCarouselEl.innerHTML = "";
-      printFiguresInHTML (figureCarouselEl, participants);
-      inputUser.value = "";
-    }
-  }
-}
-/* function printParticipantsDefault(array) {
-  for (let i = 0; i < array.length; i++) {
-    const participantListed = array[i];
-    let li = document.createElement("li");
-    li.append(document.innerHTML(participantListed[i].name));
-    ul.appendChild(li);
-    let span = document.createElement("span");
-=======
   if (inputUser.value != "") {
     addNewUser(namesListEl, inputUser.value);
     let userValue = inputUser.value;
@@ -44,13 +19,9 @@ export function addUser() {
     widthAdjustment(figureCarouselEl, participants);
     printFiguresInHTML(figureCarouselEl, participants);
     inputUser.value = "";
->>>>>>> develop
   }
-} */
+} 
 
-<<<<<<< HEAD
-//printParticipantsDefault(participants)
-=======
 // function printParticipantsDefault(array) {
 //   for (let i = 0; i < array.length; i++) {
 //     const participantListed = array[i];
@@ -61,7 +32,6 @@ export function addUser() {
 //   }
 // }
 // printParticipantsDefault(participants)
->>>>>>> develop
 // `{name: ${userValue}}`
 export function addNewUser(element, userName) {
   let userNameContainerEl = document.createElement("div");
