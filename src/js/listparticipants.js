@@ -19,7 +19,7 @@ export function addUser() {
     }
   }
 }
-function printParticipantsDefault(array) {
+/* function printParticipantsDefault(array) {
   for (let i = 0; i < array.length; i++) {
     const participantListed = array[i];
     let li = document.createElement("li");
@@ -27,9 +27,9 @@ function printParticipantsDefault(array) {
     ul.appendChild(li);
     let span = document.createElement("span");
   }
-}
+} */
 
-printParticipantsDefault(participants)
+//printParticipantsDefault(participants)
 // `{name: ${userValue}}`
 export function addNewUser(ul, list) {
     let li = document.createElement("li");

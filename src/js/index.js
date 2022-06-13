@@ -5,4 +5,4 @@ import { participants } from "./participants";
 
 printFiguresInHTML (figureCarouselEl, participants)
 addUserButton.addEventListener("click", addUser)
-console.log("ñalskdjf")
+//console.log("ñalskdjf")
