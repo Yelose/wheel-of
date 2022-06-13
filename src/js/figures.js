@@ -6,9 +6,7 @@ export function printFiguresInHTML (element, array) {
         let degrees = i*(360/array.length);
         element.innerHTML += `<figure 
         class="names" 
-        style="color: hsl(${degrees}, 100%, 50%); transform: rotateY(${degrees}deg) translateZ(40vw)"
-        
-        >
+        style="color: hsl(${degrees}, 100%, 50%); transform: rotateY(${degrees}deg) translateZ(40vw)">
         ${names.name}</figure>`
     }
 }
