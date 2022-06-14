@@ -1,18 +1,35 @@
 #participants-list{
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: left;
+  width: 90%;
+  margin-left: 5%;
   div{
     display: flex;
+    justify-content: right;
+    margin: calc(.2vw + .2vh);
+    align-items: center;
+    background-color: black;
+    p {
+      margin: calc(.3vw + .3vh) calc(1vw + 1vh);
+      background-color: green;
+      justify-self: left;
+      width: 60px;
+    }
   }
 }
-
+figure {
+  margin: calc(.1vw + .1vh);
+}
 .delete-user{
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-color: red;
   cursor: pointer;
 }
 .edit-user{
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-color: blue;
   cursor: pointer;
 }
