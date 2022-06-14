@@ -1,7 +1,12 @@
 @import "./sacrificed";
 @import "./listparticipants.scss";
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .carousel-container {
+  margin-top: calc(3vh + 2vw);
   width: 100%;
 }
 header{
