@@ -2,19 +2,24 @@
   display: flex;
   flex-flow: row-reverse wrap-reverse;
   justify-content: left;
-  width: 90%;
-  margin-left: 5%;
+  width: 100%;
+  background-color: #6CD7E6;
+  padding: 2vw 4vw;
   div{
     display: flex;
     justify-content: right;
     margin: calc(.2vw + .2vh);
     align-items: center;
-    background-color: black;
+    background-color: white;
+ 
     p {
+      border-radius: 15px;
       margin: calc(.3vw + .3vh) calc(1vw + 1vh);
-      background-color: green;
+      box-shadow: 2px 2px 3px gray;
       justify-self: left;
       width: 60px;
+      box-shadow: inset 2px 2px 3px gray;
+      
     }
   }
 }
