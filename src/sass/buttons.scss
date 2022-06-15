@@ -1,0 +1,28 @@
+.buttons {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        border: none;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        background-size: cover;
+    }
+    #start-btn{
+        background-image: url("../img/start.png");
+    }
+    #reset-btn{
+        background-image: url("../img/reset.png");
+    }
+    #users-btn{
+        background-image: url("../img/user.png");
+    }
+}
+.new-user-container{
+    display: flex;
+    justify-content: center;
+    margin: 3vh 0;
+}

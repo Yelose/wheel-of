@@ -1,5 +1,6 @@
 @import "./sacrificed";
-@import "./listparticipants.scss";
+@import "./listparticipants";
+@import "./buttons";
 * {
   padding: 0;
   margin: 0;
@@ -13,10 +14,7 @@ header{
     display: flex;
     justify-content: center;
 }
-.buttons{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .container {
     width: 6vw;
     height: 3vw;
