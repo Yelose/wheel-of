@@ -10,13 +10,12 @@ export function printParticipantsList(){
     addNewUser(namesListEl, element, userId);
   }
 }
-let subTotal = total +1
 export function addUser() {
   
   if (inputUser.value != "") {
     addNewUser(namesListEl, inputUser.value);
     let userValue = inputUser.value;
-    participants.push({ name: `${userValue}`, id: subTotal});
+    participants.push({ name: `${userValue}`, id: total});
     figureCarouselEl.innerHTML = "";
     namesListEl.innerHTML = "";
     fontSizeAdjustment(figureCarouselEl, participants);
@@ -25,9 +24,7 @@ export function addUser() {
     printParticipantsList();
     inputUser.value = "";
   }
-  debugger
   subTotal ++
-  debugger
 }
 
 export function addNewUser(element, userName, userId) {

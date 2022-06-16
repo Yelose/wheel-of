@@ -14,7 +14,7 @@
     padding: calc(.3vw + .3vh);
     div{
       border-radius: 10px;
-      box-shadow: inset 2px 2px 2px gray;
+      box-shadow: inset 1px 1px 3px 1px rgb(173, 173, 173);
       p {
         border-radius: 15px;
         margin: calc(.3vw + .3vh) calc(1vw + 1vh);
@@ -27,17 +27,19 @@
 figure {
   margin: calc(.1vw + .1vh);
 }
+.edit-user, .delete-user{
+  background-size: cover;
+  background-position: center;
+}
 .edit-user{
   width: 30px;
   height: 30px;
-  background-color: blue;
+  background-image: url(/src/img/lapiz.png);
   cursor: pointer;
 }
 .delete-user{
   width: 30px;
   height: 30px;
   background-image: url(/src/img/delete.png);
-  background-size: cover;
-  background-position: center;
   cursor: pointer;
 }
