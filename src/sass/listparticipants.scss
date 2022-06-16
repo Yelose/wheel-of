@@ -27,15 +27,17 @@
 figure {
   margin: calc(.1vw + .1vh);
 }
-.delete-user{
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  cursor: pointer;
-}
 .edit-user{
   width: 30px;
   height: 30px;
   background-color: blue;
+  cursor: pointer;
+}
+.delete-user{
+  width: 30px;
+  height: 30px;
+  background-image: url(/src/img/delete.png);
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
 }
