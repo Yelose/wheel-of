@@ -27,6 +27,7 @@ export function addUser() {
   }
 }
 
+
 // function printParticipantsDefault(array) {
 //   for (let i = 0; i < array.length; i++) {
 //     const participantListed = array[i];
@@ -51,7 +52,9 @@ export function addNewUser(element, userName, userId) {
   let deleteUserFigureEl = document.createElement("figure");
   deleteUserFigureEl.className = "delete-user";
   userNameContainerEl.appendChild(deleteUserFigureEl);
-  
+  deleteUserFigureEl.onclick = removeUser;
+
+
   element.appendChild(userNameContainerEl);
   // let span = document.createElement("span");
   // span.onclick = remove;
@@ -72,11 +75,14 @@ export function setIdToDiv (){
    </figure>
 </div> */}
 
-  // function removeUser() {
-  //   this.parentElement.remove();
-  // }
+export function removeUser() {
+    this.parentElement.remove();
+  }
+
+
 export function inputKeyPress(event){
   if (event.key == "Enter"){
     addUser()
   }
 }
+
