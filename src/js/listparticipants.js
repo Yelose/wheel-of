@@ -4,10 +4,10 @@ import { participants } from "./participants";
 
 export function printParticipantsList(){
   for (let i = 0; i < participants.length; i++) {
-    const userId = participants[i].id
+    const userId = participants[i].id;
     const element = participants[i].name;
-    addNewUser(namesListEl, element, userId)
-
+    addNewUser(namesListEl, element, userId);
+    console.log(participants[5].name);
   }
 }
 
@@ -18,7 +18,7 @@ export function addUser() {
     let userValue = inputUser.value;
     participants.push({ name: `${userValue}`, id: `${participantsTotal}`});
     figureCarouselEl.innerHTML = "";
-    namesListEl.innerHTML = ""
+    namesListEl.innerHTML = "";
     fontSizeAdjustment(figureCarouselEl, participants);
     widthAdjustment(figureCarouselEl, participants);
     printFiguresInHTML(figureCarouselEl, participants);
@@ -41,9 +41,14 @@ export function addUser() {
 export function addNewUser(element, userName, userId) {
   let userNameContainerEl = document.createElement("div");
   userNameContainerEl.setAttribute("id", `${userId}`);
+  
+  let nameContainerEl = document.createElement("div");
+  userNameContainerEl.appendChild(nameContainerEl);
+
   let userNameEl = document.createElement("p");
   userNameEl.append(document.createTextNode(userName));
-  userNameContainerEl.appendChild(userNameEl);
+  nameContainerEl.appendChild(userNameEl);
+
   let editNameFigureEl = document.createElement("figure");
   editNameFigureEl.className = "edit-user";
   userNameContainerEl.appendChild(editNameFigureEl);
