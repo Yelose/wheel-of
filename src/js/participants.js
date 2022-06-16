@@ -1,6 +1,7 @@
 
 export let participants = []
 
+
 export function participantsDefault(){
     let total = participants.length ;
     participants.push({ name: "Tania", id: total})
