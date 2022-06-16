@@ -1,6 +1,6 @@
 import { inputUser, namesListEl } from "./elements";
 import { figureCarouselEl, fontSizeAdjustment, printFiguresInHTML, widthAdjustment } from "./figures";
-import { participants, total } from "./participants";
+import { participants } from "./participants";
 
 export function printParticipantsList(){
   for (let i = 0; i < participants.length; i++) {
@@ -24,7 +24,7 @@ export function addUser() {
     printParticipantsList();
     inputUser.value = "";
   }
-  subTotal ++
+  total ++
 }
 
 export function addNewUser(element, userName, userId) {

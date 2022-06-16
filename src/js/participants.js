@@ -2,7 +2,7 @@
 export let participants = []
 
 
-export var total = 0 ;
+window.total = 0 ;
 
 function addParticipant(name){
     participants.push({ name: name, id: total})
