@@ -10,13 +10,12 @@ export function printParticipantsList(){
 
   }
 }
-
 export function addUser() {
   if (inputUser.value != "") {
     let participantsTotal = participants.length
     addNewUser(namesListEl, inputUser.value);
     let userValue = inputUser.value;
-    participants.push({ name: `${userValue}`, id: `${participantsTotal}`});
+    participants.push({ name: `${userValue}`, id: total});
     figureCarouselEl.innerHTML = "";
     namesListEl.innerHTML = ""
     fontSizeAdjustment(figureCarouselEl, participants);
@@ -25,8 +24,8 @@ export function addUser() {
     printParticipantsList();
     inputUser.value = "";
   }
-} 
-
+  total ++
+}
 
 export function addNewUser(element, userName, userId) {
   let userNameContainerEl = document.createElement("div");
