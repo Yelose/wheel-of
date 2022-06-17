@@ -13,10 +13,10 @@ export function printParticipantsList(){
 let subTotal = total +1
 export function addUser() {
   
-  if (inputUser.value != "") {
-    addNewUser(namesListEl, inputUser.value);
+  if (inputUser.value != "") {// si el input está vacío, añade un nuevo usuario que será el valor del input
+    addNewUser(namesListEl, inputUser.value);//add new user crea elementos en html nonde se añaden los divs y párrafos que los contienen
     let userValue = inputUser.value;
-    participants.push({ name: `${userValue}`, id: subTotal});
+    participants.push({ name: `${userValue}`, id: subTotal});//participants es un array vacío donde añadimos la variable userValue con el médodo push
     figureCarouselEl.innerHTML = "";
     namesListEl.innerHTML = "";
     fontSizeAdjustment(figureCarouselEl, participants);
@@ -32,18 +32,18 @@ export function addUser() {
 
 export function addNewUser(element, userName, userId) {
   let userNameContainerEl = document.createElement("div");
-  userNameContainerEl.setAttribute("id", `${userId}`);
+  userNameContainerEl.setAttribute("id", `${userId}`);//añade el atributo id a la variable user id
   
-  let nameContainerEl = document.createElement("div");
-  userNameContainerEl.appendChild(nameContainerEl);
+  let nameContainerEl = document.createElement("div");//crea un elemento HTML especificado por su etiqueta
+  userNameContainerEl.appendChild(nameContainerEl);//Agrega un nuevo nodo al final de la lista de un elemento hijo de un elemento padre especificado.
 
-  let userNameEl = document.createElement("p");
-  userNameEl.append(document.createTextNode(userName));
-  nameContainerEl.appendChild(userNameEl);
+  let userNameEl = document.createElement("p");//crea un elemento HTML especificado por su etiqueta
+  userNameEl.append(document.createTextNode(userName));// crea un nodo de texto y añade el nobbre
+  nameContainerEl.appendChild(userNameEl);//dentro del div creado arriba se añade su elemento hijo user name
 
-  let editNameFigureEl = document.createElement("figure");
+  let editNameFigureEl = document.createElement("figure");//se crea el elemento edit-user 
   editNameFigureEl.className = "edit-user";
-  userNameContainerEl.appendChild(editNameFigureEl);
+  userNameContainerEl.appendChild(editNameFigureEl);//se añade como hijo del contenedor de user
    
   let deleteUserFigureEl = document.createElement("figure");
   deleteUserFigureEl.className = "delete-user";

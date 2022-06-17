@@ -15,7 +15,7 @@ export function printFiguresInHTML (element, array) {
     }
 }
 export function fontSizeAdjustment (element, array) {
-    let fontSize = parseFloat(50 / array.length);
+    let fontSize = parseFloat(50 / array.length);//////////////////////////////////////////
     element.style.fontSize = `${fontSize}vw`
 }
 export function widthAdjustment (array) {
@@ -24,7 +24,7 @@ export function widthAdjustment (array) {
 }
 export function heigthAdjustment (array) {
     let fontSize = parseFloat(50 / array.length);
-    let height = parseFloat((fontSize)*2.5);
+    let height = parseFloat((fontSize)*2.5);/////////////////////////////////////////
     return `${height}vw`
 }
 
