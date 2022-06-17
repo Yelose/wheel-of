@@ -11,10 +11,8 @@ export let usersButton = document.getElementById("users-btn");
 resetButton.addEventListener("click", reset);
 startButton.addEventListener("click", start);
 namesListEl.addEventListener("click", (event)=>{
-   
     let id = parseInt(event.target.closest("[id]").id)
     if (event.target.closest(".delete-user") !=null){
         deleteUser(id)
     }
-        
 });
