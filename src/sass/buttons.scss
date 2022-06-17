@@ -1,0 +1,36 @@
+.buttons {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    button {
+        border: none;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        background-size: cover;
+        cursor: pointer;
+    }
+    #start-btn{
+        background-image: url("../img/start.png");
+    }
+    #reset-btn{
+        background-image: url("../img/reset.png");
+    }
+    div {
+        input{
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 2px gray;
+            padding: 1vw 2vw;
+              }
+        #add-newuser{
+            background-image: url("../img/add.png");
+        }
+    }
+}
+.new-user-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
