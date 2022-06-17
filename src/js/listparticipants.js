@@ -1,22 +1,22 @@
 import { inputUser, namesListEl } from "./elements";
 import { figureCarouselEl, fontSizeAdjustment, printFiguresInHTML, widthAdjustment } from "./figures";
-import { participants } from "./participants";
+import { participants, total } from "./participants";
 
 export function printParticipantsList(){
   for (let i = 0; i < participants.length; i++) {
-    const userId = participants[i].id
+    const userId = participants[i].id;
+   
     const element = participants[i].name;
-    addNewUser(namesListEl, element, userId)
-
+    addNewUser(namesListEl, element, userId);
   }
 }
-
+let subTotal = total +1
 export function addUser() {
+  
   if (inputUser.value != "") {
-    let participantsTotal = participants.length
     addNewUser(namesListEl, inputUser.value);
     let userValue = inputUser.value;
-    participants.push({ name: `${userValue}`, id: `${participantsTotal}`});
+    participants.push({ name: `${userValue}`, id: subTotal});
     figureCarouselEl.innerHTML = "";
     namesListEl.innerHTML = ""
     fontSizeAdjustment(figureCarouselEl, participants);
@@ -25,19 +25,11 @@ export function addUser() {
     printParticipantsList();
     inputUser.value = "";
   }
-} 
+  debugger
+  subTotal ++
+  debugger
+}
 
-// function printParticipantsDefault(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     const participantListed = array[i];
-//     let li = document.createElement("li");
-//     li.append(document.innerHTML(participantListed[i].name));
-//     ul.appendChild(li);
-//     let span = document.createElement("span");
-//   }
-// }
-// printParticipantsDefault(participants)
-// `{name: ${userValue}}`
 export function addNewUser(element, userName, userId) {
   let userNameContainerEl = document.createElement("div");
   userNameContainerEl.setAttribute("id", `${userId}`);
@@ -53,28 +45,12 @@ export function addNewUser(element, userName, userId) {
   userNameContainerEl.appendChild(deleteUserFigureEl);
   
   element.appendChild(userNameContainerEl);
-  // let span = document.createElement("span");
-  // span.onclick = remove;
-  // span.className = "close";
-  // span.appendChild(document.createTextNode("\u00D7"));
-  // li.append(span);
+
 }
 export function setIdToDiv (){
 
 }
-{/* <div>
-   <p></p>
-   <figure class="delete-user">
-      <img></img>
-   </figure>
-   <figure class="edit-user">
-      <img></img>
-   </figure>
-</div> */}
 
-  // function removeUser() {
-  //   this.parentElement.remove();
-  // }
 export function inputKeyPress(event){
   if (event.key == "Enter"){
     addUser()
