@@ -5,6 +5,7 @@ import { printParticipantsList } from "./listparticipants";
 import { participants, participantsDefault } from "./participants";
 
 export function reset(){
+    total = 0
     participants.splice(0)
     participantsDefault()
     figureCarouselEl.innerHTML = "";
