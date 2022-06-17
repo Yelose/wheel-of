@@ -56,7 +56,6 @@ export function addNewUser(element, userName, userId) {
   let deleteUserFigureEl = document.createElement("figure");
   deleteUserFigureEl.className = "delete-user";
   userNameContainerEl.appendChild(deleteUserFigureEl);
-  deleteUserFigureEl.onclick = removeUser;
 
   element.appendChild(userNameContainerEl);
   
@@ -73,11 +72,6 @@ export function setIdToDiv (){
       <img></img>
    </figure>
 </div> */}
-
-function removeUser() {
-  this.parentElement.remove();
-
-}
 
 export function inputKeyPress(event){
   if (event.key == "Enter"){
