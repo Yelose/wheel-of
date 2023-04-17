@@ -21,10 +21,10 @@ npm run start
 ### Contributors
 
 @Yelose
-Yelose Marina
+
 @TaniaRodriguezFdez
-TaniaRodriguezFdez Tania
+
 @Marta-asturias
-Marta-asturias Marta
+
 @Viviana95
-Viviana95 Viviana95
+
