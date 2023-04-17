@@ -10,48 +10,55 @@
   margin-top: calc(3vh + 2vw);
   width: 100%;
 }
-header{
-    display: flex;
-    justify-content: center;
+header {
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-    width: 6vw;
-    height: 3vw;
-    position: relative;
-    margin: 0 auto 1vw;
-    perspective: 90vw;
-  }
-  #carousel {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-            transform: translateZ(-5vw);
-            transform-style: preserve-3d;
-            transition: transform 1s;
-  }
-  #carousel figure {
-    border: 1px solid black;
-    display: flex;
-    position: absolute;
-    height: 7vw;
-    left: 10px;
-    top: 10px;
-    font-weight: bold;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    text-shadow: 2px 1px 2px black;
-    overflow: hidden;
-    padding: 0 0.5vw;
-    border-radius: 0.5vw;
-  }
-
+  width: 6vw;
+  height: 3vw;
+  position: relative;
+  margin: 0 auto 1vw;
+  perspective: 90vw;
+}
 #carousel {
-    animation: rotateInY 20s infinite linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-5vw);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+#carousel figure {
+  border: 1px solid black;
+  display: flex;
+  position: absolute;
+  height: 7vw;
+  left: 10px;
+  top: 10px;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-shadow: 2px 1px 2px black;
+  overflow: hidden;
+  padding: 0 0.5vw;
+  border-radius: 0.5vw;
+}
+.names p {
+  transition: 1.2s;
+  font-size: clamp(12px, 2vw, 36px);
+}
+#carousel {
+  animation: rotateInY 20s infinite linear;
 }
 @keyframes rotateInY {
-0%   { transform: translateZ(-2vw) rotateX(3deg) rotateY(0deg);   }
-100% { transform: translateZ(-2vw) rotateX(3deg) rotateY(360deg);    }
+  0% {
+    transform: translateZ(0) rotateX(3deg) rotateY(0deg);
+  }
+  100% {
+    transform: translateZ(0) rotateX(3deg) rotateY(360deg);
+  }
 }

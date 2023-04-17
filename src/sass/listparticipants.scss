@@ -1,23 +1,23 @@
-#participants-list{
+#participants-list {
   display: flex;
   flex-flow: row-reverse wrap-reverse;
   justify-content: center;
   width: 100%;
-  background-color: #6CD7E6;
+  background-color: #6cd7e6;
   padding: 2vw 4vw;
-  div{
+  div {
     display: flex;
     justify-content: right;
-    margin: calc(.3vw + .3vh);
+    margin: calc(0.3vw + 0.3vh);
     align-items: center;
     background-color: white;
-    padding: calc(.3vw + .3vh);
-    div{
+    padding: calc(0.3vw + 0.3vh);
+    div {
       border-radius: 10px;
       box-shadow: inset 1px 1px 3px 1px rgb(173, 173, 173);
       p {
         border-radius: 15px;
-        margin: calc(.3vw + .3vh) calc(1vw + 1vh);
+        margin: calc(0.3vw + 0.3vh) calc(1vw + 1vh);
         justify-self: left;
         width: 60px;
       }
@@ -25,19 +25,20 @@
   }
 }
 figure {
-  margin: calc(.1vw + .1vh);
+  margin: calc(0.1vw + 0.1vh);
 }
-.edit-user, .delete-user{
+.edit-user,
+.delete-user {
   background-size: cover;
   background-position: center;
 }
-.edit-user{
+.edit-user {
   width: 30px;
   height: 30px;
   background-image: url(/src/img/lapiz.png);
   cursor: pointer;
 }
-.delete-user{
+.delete-user {
   width: 30px;
   height: 30px;
   background-image: url(/src/img/delete.png);
